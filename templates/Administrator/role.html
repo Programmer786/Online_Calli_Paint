@@ -92,7 +92,9 @@
                           <th>Phone</th>
                           <th>Gender</th>
                           <th>Edit</th>
+                           {% if session.rol_name == 'Administrator' %}
                           <th>Disable / Enable</th>
+                           {% endif %}
                        </tr>
                     </thead>
                     <tbody>
@@ -111,6 +113,7 @@
                               <i class="fa fa-edit"></i>
                            </a>
                         </td>
+                        {% if session.rol_name == 'Administrator' %}
                         <td>
                            {% if role.isActive == 1 %}
                            <a href="{{url_for('disable_role_user', UserId=role.user_id)}}" class="btn btn-danger btn-circle btn-sm">
@@ -122,6 +125,7 @@
                            </a>
                            {% endif %}
                         </td>
+                        {% endif %}
                         </tr>
                        
                         <!-- Add a modal for Update New Artist -->
