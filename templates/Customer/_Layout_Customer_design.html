@@ -35,6 +35,13 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/app.customer.min.css') }}" type="text/css" />
 <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" type="text/css" />
 <!-- ================== END core-css ================== -->
+
+<!-- ================== BEGIN core-css ================== -->
+<link rel="stylesheet" href="{{ url_for('static', filename='carousel/css/owl.carousel.min.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='carousel/css/owl.theme.default.min.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='carousel/css/animate.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='carousel/css/style.css') }}" type="text/css" />
+<!-- ================== END core-css ================== -->
 <style>
     .desc {
         overflow: hidden;
@@ -141,6 +148,11 @@
 	<script src="{{ url_for('static', filename='js/demo/table-plugins.demo.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/demo/sidebar-scrollspy.demo.js') }}"></script>
 	<!-- ================== END page-js ================== -->
+
+	<script src="{{ url_for('static', filename='carousel/js/popper.js') }}"></script>
+	<script src="{{ url_for('static', filename='carousel/js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='carousel/js/main.js') }}"></script>
+
 	<script>
 		$(document).ready(function() {
 			$('.add_for_download').click(function(event) {

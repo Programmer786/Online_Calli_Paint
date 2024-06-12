@@ -25959,7 +25959,7 @@ fieldset:disabled .btn {
 }
 
 .app-header {
-    --bs-app-header-bg: #FFFFFF;
+    --bs-app-header-bg: pink;
     --bs-app-header-bg-rgb: 255, 255, 255;
     --bs-app-header-color: #212837;
     --bs-app-header-color-rgb: 33, 40, 55;
@@ -26115,7 +26115,7 @@ fieldset:disabled .btn {
 .app-header .menu {
     flex: 1;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .app-header .menu .menu-search {
